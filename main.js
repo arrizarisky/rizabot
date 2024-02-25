@@ -9,7 +9,7 @@ const bot = new TelegramBot(token, option)
 // const prefix = "."
 const respon = {
     halo: "Haloo sayang, Selamat datang di Ija versi Romantis",
-    curhat: "Ija selalu dengar apapun yang kamu ceritain",
+    curhat: "Ija selalu dengar apapun yang ica ceritain",
     badmood: "Kamu badmood yah sayang, belii cokelat atau es krim mau?",
     mau: "Oke, Kamu bisa keluarin duit kamu terus jalan ke alfamart terdekat",
     makasih: "Sama sama, jika kamu butuh sesuatu datang saja padaku"
@@ -18,6 +18,16 @@ const respon = {
 }
 // const sayHai = new RegExp(`^${prefix}hallo$`)
 // const curhat = new RegExp(`^${prefix}mau cerita$`)
+bot.on('photo', (callback) => {
+    const chatId = callback.from.id
+    const photoId = callback[callback.photo.length - 1].file_id
+
+    bot.sendPhoto(chatId, photoId,{
+        caption: "Kamu memang bidadariku, i Love you sayangku"
+    })
+})
+
+
 bot.on('message', (callback) => { 
     const chatId =  callback.chat.id;
     const messageText =callback.text.toLowerCase()
