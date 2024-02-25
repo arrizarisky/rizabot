@@ -8,7 +8,7 @@ const bot = new TelegramBot(token, option)
 // bot.on("message", (msg) => console.log(msg.text,msg.from.username))
 // const prefix = "."
 const respon = {
-    halo: "Haloo, Selamat datang di Ija versi Romantis",
+    halo: "Haloo sayang, Selamat datang di Ija versi Romantis",
     curhat: "Ija selalu dengar apapun yang kamu ceritain",
     badmood: "Kamu badmood yah sayang, belii cokelat atau es krim mau?",
     mau: "Oke, Kamu bisa keluarin duit kamu terus jalan ke alfamart terdekat",
