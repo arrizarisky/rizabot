@@ -18,10 +18,10 @@ const respon = {
 }
 // const sayHai = new RegExp(`^${prefix}hallo$`)
 // const curhat = new RegExp(`^${prefix}mau cerita$`)
-bot.on('photo', (callback) => {
-    const chatId = callback.from.id
-    const photoId = callback[callback.photo.length - 1].file_id
-
+bot.on('photo', (msg) => {
+    const chatId = msg.from.id
+    const photoId = msg[msg.photo.length - 1].file_id
+    bot.sendMessage(chatId, 'Terima kasih telah memberikan foto')
     bot.sendPhoto(chatId, photoId,{
         caption: "Kamu memang bidadariku, i Love you sayangku"
     })
