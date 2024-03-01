@@ -1,13 +1,18 @@
 {
   "name": "rizabot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Khusus untuk cewekku",
   "main": "main.js",
   "scripts": {
     "bot": "nodemon main.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "bot",
+    "cuybot",
+    "telegram",
+    "bot"
+  ],
+  "author": "arrizarisky",
   "license": "ISC",
   "dependencies": {
     "node-telegram-bot-api": "^0.64.0"
